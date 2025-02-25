@@ -227,7 +227,7 @@ export class UnitService extends CachedEntityService<Unit> {
       'portfolioAutoGenerationDate',
 
       'assessmentEnabled',
-      // 'overseerImage', - map to overseer image
+      'overseerImageId',
 
       'autoApplyExtensionBeforeDeadline',
       'sendNotifications',
