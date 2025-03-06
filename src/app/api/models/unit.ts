@@ -455,14 +455,6 @@ export class Unit extends Entity {
   }
 
   public get overseerImage(): OverseerImage {
-    if (this._overseerImage === undefined && this.overseerImageId) {
-      const overseerImageService = AppInjector.get(OverseerImageService);
-      overseerImageService.get(this.overseerImageId).subscribe({
-        next: (image) => {
-          this._overseerImage = image;
-        },
-      });
-    }
     return this._overseerImage;
   }
 
