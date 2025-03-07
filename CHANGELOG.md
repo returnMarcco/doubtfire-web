@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.0.36](https://github.com/macite/doubtfire-deploy/compare/v8.0.35...v8.0.36) (2025-03-07)
+
+
+### Bug Fixes
+
+* overseer image admin in unit and task ([72c89b3](https://github.com/macite/doubtfire-deploy/commit/72c89b30cca426d56c7efbbac34e00fd734fe714))
+
 ### [8.0.35](https://github.com/macite/doubtfire-deploy/compare/v8.0.34...v8.0.35) (2025-02-28)
 
 
