@@ -99,8 +99,8 @@ export class TaskDefinitionOverseerComponent implements OnChanges {
 
   public downloadOverseerResources() {
     this.fileDownloaderService.downloadFile(
-      this.taskDefinition.getTaskPDFUrl(),
-      this.taskDefinition.name + '.pdf',
+      this.taskDefinition.getOverseerResourcesUrl(),
+      this.taskDefinition.name + '.zip',
     );
   }
 

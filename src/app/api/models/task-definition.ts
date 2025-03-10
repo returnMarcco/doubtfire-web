@@ -208,7 +208,7 @@ export class TaskDefinition extends Entity {
     }/task_assessment_resources`;
   }
 
-  public getTaskAssessmentResourcesUrl(): string {
+  public getOverseerResourcesUrl(): string {
     return `${AppInjector.get(DoubtfireConstants).API_URL}/units/${this.unit.id}/task_definitions/${
       this.id
     }/task_assessment_resources.json`;
