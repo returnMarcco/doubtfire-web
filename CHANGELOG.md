@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.0.37](https://github.com/macite/doubtfire-deploy/compare/v8.0.36...v8.0.37) (2025-03-10)
+
+
+### Bug Fixes
+
+* ensure overseer download get resources zip ([a1e4d71](https://github.com/macite/doubtfire-deploy/commit/a1e4d71b34733bc53cd2cfa63ee1e70f8f43386f))
+
 ### [8.0.36](https://github.com/macite/doubtfire-deploy/compare/v8.0.35...v8.0.36) (2025-03-07)
 
 
