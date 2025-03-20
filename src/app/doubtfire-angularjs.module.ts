@@ -10,12 +10,9 @@ import {downgradeInjectable, downgradeComponent} from '@angular/upgrade/static';
 
 // Here are the old angular node modules, previously loaded via grunt
 //#region
-import 'angular-cookies/angular-cookies.js';
-import 'angular-local-storage/dist/angular-local-storage.js';
 import 'angular-resource/angular-resource.js';
 import 'angular-ui-bootstrap/ui-bootstrap-tpls.js';
 import 'angular-nvd3/dist/angular-nvd3.js';
-import 'angular-file-upload/angular-file-upload.js';
 import 'ng-file-upload/dist/ng-file-upload-all.min.js';
 import 'angular-sanitize/angular-sanitize.js';
 import 'ng-csv/build/ng-csv.js';
@@ -57,7 +54,6 @@ import 'build/src/app/config/privacy-policy/privacy-policy.js';
 import 'build/src/app/config/runtime/runtime.js';
 import 'build/src/app/config/config.js';
 import 'build/src/app/config/root-controller/root-controller.js';
-import 'build/src/app/config/local-storage/local-storage.js';
 import 'build/src/app/config/routing/routing.js';
 import 'build/src/app/config/vendor-dependencies/vendor-dependencies.js';
 import 'build/src/app/config/analytics/analytics.js';
