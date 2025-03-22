@@ -19,7 +19,7 @@ export class DateService {
 
   /**
    * Returns a dateString for the passed-in `date`,
-   * in the format of `MMM-YYYY.
+   * in the format of `MMM-YYYY`.
    *
    * Note: If you are going to pass in a `dateString`, please ensure it is in
    * `ISO 8601` format.
@@ -31,6 +31,7 @@ export class DateService {
   showDate(dateValue?: string | Date): string {
     if (dateValue) {
       const date = new Date(dateValue);
+
       return `${this.monthNames[date.getMonth()]} ${date.getFullYear()}`;
     } else {
       return '-';
