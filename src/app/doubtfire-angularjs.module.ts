@@ -78,7 +78,6 @@ import 'build/src/app/projects/states/portfolio/directives/portfolio-tasks-step/
 import 'build/src/app/projects/states/portfolio/directives/directives.js';
 import 'build/src/app/projects/states/portfolio/portfolio.js';
 import 'build/src/app/projects/states/index/index.js';
-import 'build/src/app/projects/states/tutorials/tutorials.js';
 import 'build/src/app/projects/project-outcome-alignment/project-outcome-alignment.js';
 import 'build/src/app/admin/modals/modals.js';
 import 'build/src/app/admin/modals/create-unit-modal/create-unit-modal.js';
@@ -215,7 +214,7 @@ import {FUnitTaskListComponent} from './units/states/tasks/viewer/directives/f-u
 import {FTaskDetailsViewComponent} from './units/states/tasks/viewer/directives/f-task-details-view/f-task-details-view.component';
 import {FTaskSheetViewComponent} from './units/states/tasks/viewer/directives/f-task-sheet-view/f-task-sheet-view.component';
 import {TasksViewerComponent} from './units/states/tasks/tasks-viewer/tasks-viewer.component';
-
+import {TutorialsComponent} from './projects/states/tutorials/tutorials';
 import {FUnitsComponent} from './admin/states/f-units/f-units.component';
 import {MarkedPipe} from './common/pipes/marked.pipe';
 import {AlertService} from './common/services/alert.service';
@@ -465,6 +464,10 @@ DoubtfireAngularJSModule.directive(
 DoubtfireAngularJSModule.directive(
   'statusIcon',
   downgradeComponent({component: StatusIconComponent}),
+);
+DoubtfireAngularJSModule.directive(
+  'tutorials',
+  downgradeComponent({component: TutorialsComponent}),
 );
 DoubtfireAngularJSModule.directive('newFUnits', downgradeComponent({component: FUnitsComponent}));
 

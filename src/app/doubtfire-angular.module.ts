@@ -242,6 +242,7 @@ import {ScormExtensionCommentComponent} from './tasks/task-comments-viewer/scorm
 import {ScormExtensionModalComponent} from './common/modals/scorm-extension-modal/scorm-extension-modal.component';
 import { D2lTransferComponent, D2lTransferModal } from './units/states/portfolios/d2l-transfer-modal/d2l-transfer.component';
 import { SuccessCloseComponent } from './common/success-close/success-close.component';
+import {TutorialsComponent} from './projects/states/tutorials/tutorials';
 
 // See https://stackoverflow.com/questions/55721254/how-to-change-mat-datepicker-date-format-to-dd-mm-yyyy-in-simplest-way/58189036#58189036
 const MY_DATE_FORMAT = {
@@ -366,6 +367,7 @@ const MY_DATE_FORMAT = {
     TaskScormCardComponent,
     ScormExtensionCommentComponent,
     ScormExtensionModalComponent,
+    TutorialsComponent,
   ],
   // Services we provide
   providers: [
