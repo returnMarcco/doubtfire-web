@@ -9,7 +9,8 @@ import {AcceptEulaComponent} from './eula/accept-eula/accept-eula.component';
 import {FUsersComponent} from './admin/states/f-users/f-users.component';
 import {FUnitsComponent} from './admin/states/f-units/f-units.component';
 import {ScormPlayerComponent} from './common/scorm-player/scorm-player.component';
-import { SuccessCloseComponent } from './common/success-close/success-close.component';
+import {SuccessCloseComponent} from './common/success-close/success-close.component';
+import {TutorialsComponent} from './projects/states/tutorials/tutorials';
 
 /*
  * Use this file to store any states that are sourced by angular components.
@@ -303,13 +304,13 @@ const ScormPlayerNormalState: NgHybridStateDeclaration = {
       '$stateParams',
       function ($stateParams: {project_id: number}) {
         return $stateParams.project_id;
-      }
+      },
     ],
     taskDefId: [
       '$stateParams',
       function ($stateParams: {task_definition_id: number}) {
         return $stateParams.task_definition_id;
-      }
+      },
     ],
     mode: function () {
       return 'normal';
@@ -337,19 +338,19 @@ const ScormPlayerStudentReviewState: NgHybridStateDeclaration = {
       '$stateParams',
       function ($stateParams) {
         return $stateParams.project_id;
-      }
+      },
     ],
     taskDefId: [
       '$stateParams',
       function ($stateParams) {
         return $stateParams.task_definition_id;
-      }
+      },
     ],
     testAttemptId: [
       '$stateParams',
       function ($stateParams) {
         return $stateParams.test_attempt_id;
-      }
+      },
     ],
     mode: function () {
       return 'review';
@@ -374,7 +375,7 @@ const ScormPlayerReviewState: NgHybridStateDeclaration = {
       '$stateParams',
       function ($stateParams) {
         return $stateParams.task_definition_id;
-      }
+      },
     ],
     mode: function () {
       return 'preview';
@@ -405,6 +406,19 @@ const SuccessCloseState: NgHybridStateDeclaration = {
   },
 };
 
+const TutorialState: NgHybridStateDeclaration = {
+  name: 'projects/tutorials',
+  url: '/tutorials',
+  views: {
+    main: {
+      component: TutorialsComponent, // Link to the Angular component
+    },
+  },
+  data: {
+    pageTitle: 'Tutorial List',
+    roleWhiteList: ['Tutor', 'Convenor', 'Admin', 'Student', 'Auditor'], // Roles allowed to access this state
+  },
+};
 
 /**
  * Export the list of states we have created in angular
@@ -424,5 +438,6 @@ export const doubtfireStates = [
   ScormPlayerNormalState,
   ScormPlayerReviewState,
   ScormPlayerStudentReviewState,
-  SuccessCloseState
+  SuccessCloseState,
+  TutorialState,
 ];
