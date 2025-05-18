@@ -79,7 +79,6 @@ import 'build/src/app/projects/states/portfolio/directives/portfolio-tasks-step/
 import 'build/src/app/projects/states/portfolio/directives/directives.js';
 import 'build/src/app/projects/states/portfolio/portfolio.js';
 import 'build/src/app/projects/states/index/index.js';
-import 'build/src/app/projects/states/tutorials/tutorials.js';
 import 'build/src/app/projects/project-outcome-alignment/project-outcome-alignment.js';
 import 'build/src/app/admin/modals/modals.js';
 import 'build/src/app/admin/modals/create-unit-modal/create-unit-modal.js';
@@ -216,6 +215,7 @@ import { FTaskDetailsViewComponent } from './units/task-viewer/directives/task-d
 import { FTaskSheetViewComponent } from './units/task-viewer/directives/task-sheet-view/task-sheet-view.component';
 import { ProgressBurndownChartComponent } from './visualisations/progress-burndown-chart/progressburndownchart.component';
 import { TaskVisualisationComponent } from './visualisations/task-visualisation/taskvisualisation.component';
+import { TutorialsComponent } from './projects/states/tutorials/tutorials.component';
 
 import {FUnitsComponent} from './admin/states/units/units.component';
 import {AlertService} from './common/services/alert.service';
@@ -471,6 +471,7 @@ DoubtfireAngularJSModule.directive(
 DoubtfireAngularJSModule.directive('newFUnits', downgradeComponent({component: FUnitsComponent}));
 
 DoubtfireAngularJSModule.directive('unauthorised', downgradeComponent({ component: UnauthorisedComponent }));
+DoubtfireAngularJSModule.directive('tutorials', downgradeComponent({ component: TutorialsComponent }));
 
 // Global configuration
 
