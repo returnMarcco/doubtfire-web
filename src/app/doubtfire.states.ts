@@ -408,14 +408,18 @@ const SuccessCloseState: NgHybridStateDeclaration = {
 
 const TutorialState: NgHybridStateDeclaration = {
   name: 'projects/tutorials',
-  url: '/tutorials',
+  url: '/tutorials/project/:projectId',
   views: {
     main: {
       component: TutorialsComponent, // Link to the Angular component
     },
   },
+  resolve: {
+    projectId: ['$stateParams', ($stateParams) => $stateParams.projectId], // Resolve the project object
+  },
   data: {
-    pageTitle: 'Tutorial List',
+    task: 'Tutorial List',
+    pageTitle: '_Home_',
     roleWhiteList: ['Tutor', 'Convenor', 'Admin', 'Student', 'Auditor'], // Roles allowed to access this state
   },
 };
