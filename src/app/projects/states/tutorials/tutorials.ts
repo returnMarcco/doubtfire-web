@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {StateService} from '@uirouter/angular';
-import { ProjectService } from 'src/app/api/services/project.service';
-import { Project } from 'src/app/api/models/project';
-import { Unit } from 'src/app/api/models/unit';
-import { Tutorial } from 'src/app/api/models/doubtfire-model';
+import {ProjectService} from 'src/app/api/services/project.service';
+import {Project} from 'src/app/api/models/project';
+import {Unit} from 'src/app/api/models/unit';
+import {Tutorial} from 'src/app/api/models/doubtfire-model';
 
 @Component({
   selector: 'tutorials',
@@ -33,7 +33,10 @@ export class TutorialsComponent implements OnInit {
       next: (project) => {
         this.project = project;
         this.unit = project.unit;
-        this.filteredTutorials = [...project.unit.tutorials];
+        this.filteredTutorials = this.tutorialCampusFilter(
+          [...project.unit.tutorials],
+          this.project,
+        );
 
         // Set the sort order based on the unit's tutorialStreamsCache size
         if (this.unit?.tutorialStreamsCache?.size > 0) {
@@ -58,6 +61,13 @@ export class TutorialsComponent implements OnInit {
     });
   }
 
+  /**
+   * Used to determine how to sort the table view.
+   *
+   * @param order
+   *
+   * @returns void
+   */
   setSortOrder(order: string): void {
     if (this.sortOrder === order) {
       this.reverse = !this.reverse;
@@ -68,8 +78,13 @@ export class TutorialsComponent implements OnInit {
     this.updateFilteredTutorials();
   }
 
+  /**
+   * Used to perform the actual sorting of the data in the table view.
+   *
+   * @returns void
+   */
   updateFilteredTutorials(): void {
-    this.filteredTutorials = [...this.unit.tutorials].sort((a, b) => {
+    this.filteredTutorials = [...this.filteredTutorials].sort((a, b) => {
       const valueA = this.getValueByPath(a, this.sortOrder);
       const valueB = this.getValueByPath(b, this.sortOrder);
 
@@ -79,18 +94,64 @@ export class TutorialsComponent implements OnInit {
     });
   }
 
+  /**
+   * Traverses the passed-in object to find the key at the supplied path.
+   *
+   * @param obj Object to traverse
+   * @param path The path of the object to find
+   *
+   * @returns any
+   */
   getValueByPath(obj: object, path: string): any {
     return path.split('.').reduce((acc, part) => acc && acc[part], obj);
   }
 
+  /**
+   * Switches to the passed-in tutorial.
+   *
+   * @param tutorial
+   *
+   * @returns void
+   */
   switchToTutorial(tutorial: Tutorial): void {
     this.project.switchToTutorial(tutorial);
   }
 
+  /**
+   * Determines whether the user is enrolled in the passed-in tutorial.
+   *
+   * @param tutorial
+   *
+   * @returns boolean
+   */
   isEnrolledIn(tutorial: Tutorial): boolean {
     return this.project.isEnrolledIn(tutorial);
   }
 
+  /**
+   * Filters a collection of passed-in tutorials based on the campus_id of the passed-in project.
+   *
+   * @param tutorials
+   * @param project
+   *
+   * @returns Tutorial[]
+   */
+  tutorialCampusFilter(tutorials: Tutorial[], project: Project): Tutorial[] {
+    if (!project) {
+      return tutorials;
+    }
+    return tutorials.filter((tutorial) => {
+      return !project.campus?.id || !tutorial.campus || tutorial.campus.id === project.campus.id;
+    });
+  }
+
+  /**
+   * Formats the passed-in time string to the format of: HH:mm
+   *
+   * @param meetingTime
+   *
+   * @returns string
+   */
   shortTime(meetingTime: string): string {
     const [hours, minutes] = meetingTime.split(':');
     const formattedHours = hours.padStart(2, '0');
