@@ -39,7 +39,7 @@
         </thead>
         <tbody>
           <tr
-            *ngFor="let tutorial of unit.tutorials"
+            *ngFor="let tutorial of filteredTutorials"
             [ngClass]="{ info: tutorial === project.tutorial }"
           >
             <td *ngIf="unit.tutorialStreamsCache.size > 0">{{ tutorial.tutorialStream?.name || 'All' }}</td>

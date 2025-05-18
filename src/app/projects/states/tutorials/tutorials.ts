@@ -26,14 +26,15 @@ export class TutorialsComponent implements OnInit {
   constructor(
     private stateService: StateService,
     private projectService: ProjectService,
-  ) {} //Inject Unit and Project services
+  ) {}
 
-  // Todo @Jason: Filter tutorials
   ngOnInit(): void {
     this.projectService.fetch(this.projectId).subscribe({
       next: (project) => {
         this.project = project;
-        this.unit = this.project.unit;
+        this.unit = project.unit;
+        this.filteredTutorials = [...project.unit.tutorials];
+
         // Set the sort order based on the unit's tutorialStreamsCache size
         if (this.unit?.tutorialStreamsCache?.size > 0) {
           this.sortOrder = 'tutorialStream.name';
@@ -78,7 +79,7 @@ export class TutorialsComponent implements OnInit {
     });
   }
 
-  getValueByPath(obj: any, path: string): any {
+  getValueByPath(obj: object, path: string): any {
     return path.split('.').reduce((acc, part) => acc && acc[part], obj);
   }
 
