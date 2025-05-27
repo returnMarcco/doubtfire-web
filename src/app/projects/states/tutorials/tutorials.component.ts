@@ -7,7 +7,7 @@ import {Tutorial} from 'src/app/api/models/doubtfire-model';
 
 @Component({
   selector: 'tutorials',
-  templateUrl: './tutorials.component.tpl.html',
+  templateUrl: './tutorials.component.html',
   styleUrls: ['./tutorials.component.scss'],
 })
 export class TutorialsComponent implements OnInit {
@@ -147,7 +147,7 @@ export class TutorialsComponent implements OnInit {
 
   /**
    * Formats the passed-in time string to the format of: HH:mm
-   *
+   * Todo: Add date validation
    * @param meetingTime
    *
    * @returns string
