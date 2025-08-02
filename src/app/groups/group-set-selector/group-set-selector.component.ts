@@ -1,25 +1,30 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import {Unit, GroupSet} from '/workspace/doubtfire-web/src/app/api/models/doubtfire-model';
 
 @Component({
   selector: 'group-set-selector',
   templateUrl: './group-set-selector.component.html',
   styleUrls: ['./group-set-selector.component.scss']
 })
-export class GroupSetSelectorComponent implements OnInit {
-  @Input() unit: any;
-  @Input() selectedGroupSet: any;
+export class GroupSetSelectorComponent implements OnInit, OnChanges {
+  @Input() unit: Unit;
+  @Input() selectedGroupSet: GroupSet;
   @Output() selectedGroupSetChange = new EventEmitter<any>();
   @Output() onSelectGroupSet = new EventEmitter<any>();
 
-  constructor() {
+  ngOnInit(): void {
     if (!this.unit) {
       throw new Error('Unit not supplied to group set selector');
     }
   }
 
-  ngOnInit() {
-    if (!this.unit) {
-      throw new Error('Unit not supplied to group set selector');
+  ngOnChanges(changes: SimpleChanges) { // Todo @Jason: Remove this method
+    console.log('GroupSetSelectorComponent ngOnChanges:', changes);
+    if (changes['unit']) {
+      console.log('Unit changed from:', changes['unit'].previousValue, 'to:', changes['unit'].currentValue);
+    }
+    if (changes['selectedGroupSet']) {
+      console.log('SelectedGroupSet changed from:', changes['selectedGroupSet'].previousValue, 'to:', changes['selectedGroupSet'].currentValue);
     }
   }
 
