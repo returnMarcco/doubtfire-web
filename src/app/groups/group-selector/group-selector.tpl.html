@@ -5,8 +5,8 @@
     <group-set-selector
       *ngIf="showGroupSetSelector"
       [unit]="unit"
-      [(ngModel)]="selectedGroupSet"
-      (selectedGroupSetChange)="selectGroupSet($event)"
+      [(selectedGroupSet)]="selectedGroupSet"
+      (onChange)="selectGroupSet($event)"
     >
     </group-set-selector>
   </h4>
