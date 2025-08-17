@@ -105,6 +105,15 @@ MIGRATED:
 - [x] ./src/app/common/services/date-service.service.ts
 - [x] ./src/app/common/services/analytics-service.service.ts
 - [x] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.component.ts
+- [x] ./src/app/tasks/modals/modals.coffee
+- [x] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
+- [x] ./src/app/config/privacy-policy/privacy-policy.coffee
+- [x] ./src/app/config/routing/routing.coffee
+- [x] ./src/app/config/debug/debug.coffee
+- [x] ./src/app/projects/states/all/directives/all-projects-list/all-projects-list.coffee
+- [x] ./src/app/projects/states/all/all.coffee
+- [x] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
+- [x] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
 
 TODO:
 
@@ -120,28 +129,21 @@ TODO:
 - [ ] ./src/app/visualisations/visualisations.coffee
 - [ ] ./src/app/tasks/task-status-selector/task-status-selector.coffee
 - [ ] ./src/app/tasks/tasks.coffee
-- [ ] ./src/app/tasks/modals/modals.coffee
 - [ ] ./src/app/tasks/modals/upload-submission-modal/upload-submission-modal.coffee
-- [ ] ./src/app/tasks/task-definition-selector/task-definition-selector.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/modals/task-ilo-alignment-modal/task-ilo-alignment-modal.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/modals/task-ilo-alignment.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-editor/task-ilo-alignment-editor.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-viewer/task-ilo-alignment-viewer.coffee
-- [ ] ./src/app/config/privacy-policy/privacy-policy.coffee
 - [ ] ./src/app/config/config.coffee
 - [ ] ./src/app/config/runtime/runtime.coffee
 - [ ] ./src/app/config/root-controller/root-controller.coffee
 - [ ] ./src/app/config/local-storage/local-storage.coffee
-- [ ] ./src/app/config/routing/routing.coffee
 - [ ] ./src/app/config/vendor-dependencies/vendor-dependencies.coffee
-- [ ] ./src/app/config/debug/debug.coffee
 - [ ] ./src/app/projects/projects.coffee
 - [ ] ./src/app/projects/project-progress-dashboard/project-progress-dashboard.coffee
 - [ ] ./src/app/projects/states/states.coffee
 - [ ] ./src/app/projects/states/all/directives/directives.coffee
-- [ ] ./src/app/projects/states/all/directives/all-projects-list/all-projects-list.coffee
-- [ ] ./src/app/projects/states/all/all.coffee
 - [ ] ./src/app/projects/states/groups/groups.coffee
 - [ ] ./src/app/projects/states/feedback/feedback.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/directives.coffee
@@ -168,10 +170,8 @@ TODO:
 - [ ] ./src/app/admin/admin.coffee
 - [ ] ./src/app/groups/group-selector/group-selector.coffee
 - [ ] ./src/app/groups/group-set-manager/group-set-manager.coffee
-- [ ] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
 - [ ] ./src/app/groups/group-member-list/group-member-list.coffee
 - [ ] ./src/app/groups/group-set-selector/group-set-selector.coffee
-- [ ] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
 - [ ] ./src/app/groups/groups.coffee
 - [ ] ./src/app/units/modals/modals.coffee
 - [ ] ./src/app/units/modals/unit-ilo-edit-modal/unit-ilo-edit-modal.coffee
@@ -179,7 +179,6 @@ TODO:
 - [ ] ./src/app/units/states/states.coffee
 - [ ] ./src/app/units/states/tasks/tasks.coffee
 - [ ] ./src/app/units/states/tasks/viewer/directives/directives.coffee
-- [ ] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
 - [ ] ./src/app/units/states/tasks/viewer/directives/task-details-view/task-details-view.coffee
 - [ ] ./src/app/units/states/tasks/viewer/directives/unit-task-list/unit-task-list.coffee
 - [ ] ./src/app/units/states/tasks/viewer/viewer.coffee
