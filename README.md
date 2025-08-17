@@ -177,7 +177,6 @@ TODO:
 - [ ] ./src/app/units/modals/unit-ilo-edit-modal/unit-ilo-edit-modal.coffee
 - [ ] ./src/app/units/units.coffee
 - [ ] ./src/app/units/states/states.coffee
-- [ ] ./src/app/units/states/tasks/inbox/inbox.coffee
 - [ ] ./src/app/units/states/tasks/tasks.coffee
 - [ ] ./src/app/units/states/tasks/viewer/directives/directives.coffee
 - [ ] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
@@ -199,7 +198,6 @@ TODO:
 - [ ] ./src/app/units/states/rollover/rollover.coffee
 - [ ] ./src/app/units/states/index/index.coffee
 - [ ] ./src/app/units/states/students-list/students-list.coffee
-- [ ] ./src/app/units/states/analytics/analytics.coffee
 - [ ] ./src/app/common/alert-list/alert-list.coffee
 - [ ] ./src/app/common/modals/confirmation-modal/confirmation-modal.coffee
 - [ ] ./src/app/common/modals/comments-modal/comments-modal.coffee
