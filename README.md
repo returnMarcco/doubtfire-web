@@ -14,7 +14,7 @@ A modern, lightweight learning management system.
 
 SUMMARY:
 
-73 / 132 components migrated
+87 / 132 components migrated
 
 MIGRATED:
 
@@ -91,6 +91,20 @@ MIGRATED:
 - [x] ./src/app/common/services/alert.service.ts
 - [x] ./src/app/sessions/states/sign-in/sign-in.component.ts
 - [x] ./src/app/account/edit-profile/edit-profile.component.ts
+- [x] ./src/app/tasks/modals/grade-task-modal/grade-task-modal.component.ts
+- [x] ./src/app/units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.component.ts
+- [x] ./src/app/visualisations/progress-burndown-chart/progressburndownchart.component.ts
+- [x] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-rater/task-ilo-alignment-rater.component.ts
+- [x] ./src/app/config/analytics/analytics.component.ts
+- [x] ./src/app/projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.component.ts
+- [x] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.component.ts
+- [x] ./src/app/common/filters/filters.component.ts
+- [x] ./src/app/common/content-editable/content-editable.component.ts
+- [x] ./src/app/projects/states/tutorials/tutorials.component.ts
+- [x] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.component.ts
+- [x] ./src/app/common/services/date-service.service.ts
+- [x] ./src/app/common/services/analytics-service.service.ts
+- [x] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.component.ts
 
 TODO:
 
@@ -100,7 +114,6 @@ TODO:
 - [ ] ./src/app/visualisations/achievement-custom-bar-chart.coffee
 - [ ] ./src/app/visualisations/student-task-status-pie-chart.coffee
 - [ ] ./src/app/visualisations/alignment-bullet-chart.coffee
-- [ ] ./src/app/visualisations/progress-burndown-chart.coffee
 - [ ] ./src/app/visualisations/task-status-pie-chart.coffee
 - [ ] ./src/app/visualisations/achievement-box-plot.coffee
 - [ ] ./src/app/visualisations/task-completion-box-plot.coffee
@@ -109,10 +122,7 @@ TODO:
 - [ ] ./src/app/tasks/tasks.coffee
 - [ ] ./src/app/tasks/modals/modals.coffee
 - [ ] ./src/app/tasks/modals/upload-submission-modal/upload-submission-modal.coffee
-- [ ] ./src/app/tasks/modals/grade-task-modal/grade-task-modal.coffee
 - [ ] ./src/app/tasks/task-definition-selector/task-definition-selector.coffee
-- [ ] ./src/app/tasks/project-tasks-list/project-tasks-list.coffee
-- [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-rater/task-ilo-alignment-rater.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/modals/task-ilo-alignment-modal/task-ilo-alignment-modal.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/modals/task-ilo-alignment.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-editor/task-ilo-alignment-editor.coffee
@@ -125,7 +135,6 @@ TODO:
 - [ ] ./src/app/config/local-storage/local-storage.coffee
 - [ ] ./src/app/config/routing/routing.coffee
 - [ ] ./src/app/config/vendor-dependencies/vendor-dependencies.coffee
-- [ ] ./src/app/config/analytics/analytics.coffee
 - [ ] ./src/app/config/debug/debug.coffee
 - [ ] ./src/app/projects/projects.coffee
 - [ ] ./src/app/projects/project-progress-dashboard/project-progress-dashboard.coffee
@@ -147,12 +156,9 @@ TODO:
 - [ ] ./src/app/projects/states/portfolio/directives/directives.coffee
 - [ ] ./src/app/projects/states/portfolio/directives/portfolio-learning-summary-report-step/portfolio-learning-summary-report-step.coffee
 - [ ] ./src/app/projects/states/portfolio/directives/portfolio-add-extra-files-step/portfolio-add-extra-files-step.coffee
-- [ ] ./src/app/projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.coffee
-- [ ] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.coffee
 - [ ] ./src/app/projects/states/portfolio/directives/portfolio-tasks-step/portfolio-tasks-step.coffee
 - [ ] ./src/app/projects/states/portfolio/portfolio.coffee
 - [ ] ./src/app/projects/states/index/index.coffee
-- [ ] ./src/app/projects/states/tutorials/tutorials.coffee
 - [ ] ./src/app/projects/project-outcome-alignment/project-outcome-alignment.coffee
 - [ ] ./src/app/admin/modals/modals.coffee
 - [ ] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
@@ -167,7 +173,6 @@ TODO:
 - [ ] ./src/app/groups/group-set-selector/group-set-selector.coffee
 - [ ] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
 - [ ] ./src/app/groups/groups.coffee
-- [ ] ./src/app/units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.coffee
 - [ ] ./src/app/units/modals/modals.coffee
 - [ ] ./src/app/units/modals/unit-ilo-edit-modal/unit-ilo-edit-modal.coffee
 - [ ] ./src/app/units/units.coffee
@@ -187,8 +192,6 @@ TODO:
 - [ ] ./src/app/units/states/groups/groups.coffee
 - [ ] ./src/app/units/states/edit/directives/directives.coffee
 - [ ] ./src/app/units/states/edit/directives/unit-group-set-editor/unit-group-set-editor.coffee
-- [ ] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.coffee
-- [ ] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.coffee
 - [ ] ./src/app/units/states/edit/directives/unit-ilo-editor/unit-ilo-editor.coffee
 - [ ] ./src/app/units/states/edit/edit.coffee
 - [ ] ./src/app/units/states/rollover/directives/directives.coffee
@@ -197,8 +200,6 @@ TODO:
 - [ ] ./src/app/units/states/index/index.coffee
 - [ ] ./src/app/units/states/students-list/students-list.coffee
 - [ ] ./src/app/units/states/analytics/analytics.coffee
-- [ ] ./src/app/common/filters/filters.coffee
-- [ ] ./src/app/common/content-editable/content-editable.coffee
 - [ ] ./src/app/common/alert-list/alert-list.coffee
 - [ ] ./src/app/common/modals/confirmation-modal/confirmation-modal.coffee
 - [ ] ./src/app/common/modals/comments-modal/comments-modal.coffee
@@ -209,13 +210,11 @@ TODO:
 - [ ] ./src/app/common/file-uploader/file-uploader.coffee
 - [ ] ./src/app/common/common.coffee
 - [ ] ./src/app/common/services/grade-service.coffee
-- [ ] ./src/app/common/services/date-service.coffee
 - [ ] ./src/app/common/services/alert-service.coffee
 - [ ] ./src/app/common/services/media-service.coffee
 - [ ] ./src/app/common/services/recorder-service.coffee
 - [ ] ./src/app/common/services/outcome-service.coffee
 - [ ] ./src/app/common/services/listener-service.coffee
-- [ ] ./src/app/common/services/analytics-service.coffee
 - [ ] ./src/app/common/services/services.coffee
 - [ ] ./src/app/sessions/auth/http-auth-injector.coffee
 - [ ] ./src/app/sessions/sessions.coffee
