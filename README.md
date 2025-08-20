@@ -157,13 +157,13 @@ TODO:
 - [ ] ./src/app/config/vendor-dependencies/vendor-dependencies.coffee
 - [ ] ./src/app/config/routing/routing.coffee
 - [ ] ./src/app/projects/projects.coffee
-- [ ] ./src/app/projects/Doprogress-dashboard/project-progress-dashboard.coffee
+- [ ] ./src/app/projects/progress-dashboard/project-progress-dashboard.coffee
 - [ ] ./src/app/projects/states/states.coffee
 - [ ] ./src/app/projects/states/all/directives/directives.coffee
 - [ ] ./src/app/projects/states/groups/groups.coffee
 - [ ] ./src/app/projects/states/feedback/feedback.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/directives.coffee
-- [ ] ./src/app/projects/states/dashboard/directives/progress-dashboard/progress-dWHDashboard.coffee
+- [ ] ./src/app/projects/states/dashboard/directives/progress-dashboard/progress-dashboard.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/student-task-list/student-task-list.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/directives.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/task-outcomes-card/task-outcomes-card.coffee
