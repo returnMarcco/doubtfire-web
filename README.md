@@ -12,9 +12,39 @@ A modern, lightweight learning management system.
 
 ## Migration Progress
 
+Note: When raising an `upstream review` (to doubtfire-lms), move your component from the `TODO` section
+to the `AWAITING UPSTREAM REVIEW` section. Maintainers for the `doubtfire-lms` repo should then
+move the item to the `MIGRATED` section during the review process.
+
 SUMMARY:
 
-87 / 132 components migrated
+79 / 198 components migrated
+12 components awaiting upstream review
+4 components no longer in the thoth-tech/9.x branch
+
+AWAITING UPSTREAM REVIEW:
+
+- [?] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-rater/task-ilo-alignment-rater.component.ts
+- [?] ./src/app/config/analytics/analytics.component.ts
+- [?] ./src/app/projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.component.ts
+- [?] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.component.ts
+- [?] ./src/app/common/filters/filters.component.ts
+- [?] ./src/app/common/content-editable/content-editable.component.ts
+- [?] ./src/app/projects/states/tutorials/tutorials.component.ts
+- [?] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.component.ts
+- [?] ./src/app/common/services/date-service.service.ts
+- [?] ./src/app/common/services/analytics-service.service.ts
+- [?] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.component.ts
+- [?] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
+
+
+NO LONGER IN THOTH-TECH/9.x
+
+- [x] ./src/app/projects/states/all/directives/all-projects-list/all-projects-list.coffee
+- [x] ./src/app/projects/states/all/all.coffee
+- [x] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
+- [x] ./src/app/tasks/task-definition-selector/task-definition-selector.coffee
+
 
 MIGRATED:
 
@@ -25,6 +55,7 @@ MIGRATED:
 - [x] ./src/app/tasks/task-comments-viewer/extension-comment/extension-comment.component.ts
 - [x] ./src/app/tasks/task-comments-viewer/intelligent-discussion-player/intelligent-discussion-player.component.ts
 - [x] ./src/app/tasks/task-comments-viewer/intelligent-discussion-player/intelligent-discussion-recorder/intelligent-discussion-recorder.component.ts
+- [x] ./src/app/tasks/project-tasks-list/project-tasks-list.coffee
 - [x] ./src/app/tasks/task-comments-viewer/pdf-image-comment/pdf-image-comment.component.ts
 - [x] ./src/app/tasks/task-comments-viewer/comment-bubble-action/comment-bubble-action.component.ts
 - [x] ./src/app/tasks/task-comments-viewer/task-comments-viewer.component.ts
@@ -49,7 +80,6 @@ MIGRATED:
 - [x] ./src/app/eula/accept-eula/accept-eula.component.ts
 - [x] ./src/app/welcome/welcome.component.ts
 - [x] ./src/app/units/states/tasks/inbox/directives/staff-task-list/staff-task-list.component.ts
-- [x] ./src/app/units/states/tasks/inbox/inbox.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-students-editor/student-tutorial-select/student-tutorial-select.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-students-editor/unit-students-editor.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-students-editor/student-campus-select/student-campus-select.component.ts
@@ -94,26 +124,9 @@ MIGRATED:
 - [x] ./src/app/tasks/modals/grade-task-modal/grade-task-modal.component.ts
 - [x] ./src/app/units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.component.ts
 - [x] ./src/app/visualisations/progress-burndown-chart/progressburndownchart.component.ts
-- [x] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-rater/task-ilo-alignment-rater.component.ts
-- [x] ./src/app/config/analytics/analytics.component.ts
-- [x] ./src/app/projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.component.ts
-- [x] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.component.ts
-- [x] ./src/app/common/filters/filters.component.ts
-- [x] ./src/app/common/content-editable/content-editable.component.ts
-- [x] ./src/app/projects/states/tutorials/tutorials.component.ts
-- [x] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.component.ts
-- [x] ./src/app/common/services/date-service.service.ts
-- [x] ./src/app/common/services/analytics-service.service.ts
-- [x] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.component.ts
-- [x] ./src/app/tasks/modals/modals.coffee
-- [x] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
 - [x] ./src/app/config/privacy-policy/privacy-policy.coffee
-- [x] ./src/app/config/routing/routing.coffee
-- [x] ./src/app/config/debug/debug.coffee
-- [x] ./src/app/projects/states/all/directives/all-projects-list/all-projects-list.coffee
-- [x] ./src/app/projects/states/all/all.coffee
-- [x] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
 - [x] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
+- [x] ./src/app/units/states/tasks/inbox/inbox.coffee
 
 TODO:
 
@@ -135,19 +148,22 @@ TODO:
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-editor/task-ilo-alignment-editor.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-viewer/task-ilo-alignment-viewer.coffee
+- [ ] ./src/app/tasks/modals/modals.coffee
 - [ ] ./src/app/config/config.coffee
 - [ ] ./src/app/config/runtime/runtime.coffee
 - [ ] ./src/app/config/root-controller/root-controller.coffee
+- [ ] ./src/app/config/debug/debug.coffee
 - [ ] ./src/app/config/local-storage/local-storage.coffee
 - [ ] ./src/app/config/vendor-dependencies/vendor-dependencies.coffee
+- [ ] ./src/app/config/routing/routing.coffee
 - [ ] ./src/app/projects/projects.coffee
-- [ ] ./src/app/projects/project-progress-dashboard/project-progress-dashboard.coffee
+- [ ] ./src/app/projects/Doprogress-dashboard/project-progress-dashboard.coffee
 - [ ] ./src/app/projects/states/states.coffee
 - [ ] ./src/app/projects/states/all/directives/directives.coffee
 - [ ] ./src/app/projects/states/groups/groups.coffee
 - [ ] ./src/app/projects/states/feedback/feedback.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/directives.coffee
-- [ ] ./src/app/projects/states/dashboard/directives/progress-dashboard/progress-dashboard.coffee
+- [ ] ./src/app/projects/states/dashboard/directives/progress-dashboard/progress-dWHDashboard.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/student-task-list/student-task-list.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/directives.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/task-outcomes-card/task-outcomes-card.coffee
@@ -186,6 +202,7 @@ TODO:
 - [ ] ./src/app/units/states/portfolios/portfolios.coffee
 - [ ] ./src/app/units/states/all/directives/all-units-list/all-units-list.coffee
 - [ ] ./src/app/units/states/all/directives/directives.coffee
+- [ ] ./src/app/units/states/analytics/analytics.coffee
 - [ ] ./src/app/units/states/all/all.coffee
 - [ ] ./src/app/units/states/groups/groups.coffee
 - [ ] ./src/app/units/states/edit/directives/directives.coffee
