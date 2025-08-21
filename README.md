@@ -14,7 +14,7 @@ A modern, lightweight learning management system.
 
 SUMMARY:
 
-73 / 132 components migrated
+74 / 132 components migrated
 
 MIGRATED:
 
