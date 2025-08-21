@@ -9,7 +9,7 @@ import { Unit, GroupSet } from 'src/app/api/models/doubtfire-model';
 export class GroupSetSelectorComponent implements OnInit {
   @Input() unit: Unit;
   @Input() selectedGroupSet: GroupSet;
-  @Output() onChange = new EventEmitter<GroupSet>();
+  @Output() selectedGroupSetChange = new EventEmitter<GroupSet>();
 
   ngOnInit(): void {
     if (!this.unit) {
@@ -19,11 +19,11 @@ export class GroupSetSelectorComponent implements OnInit {
 
   /**
    * Selects a `GroupSet` model from the `group-set-selector` dropdown.
-   * 
+   *
    * @param {GroupSet} groupSet
    */
   selectGroupSet(groupSet: GroupSet): void {
     this.selectedGroupSet = groupSet;
-    this.onChange.emit(this.selectedGroupSet);
+    this.selectedGroupSetChange.emit(this.selectedGroupSet);
   }
 }
