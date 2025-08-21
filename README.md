@@ -127,6 +127,7 @@ MIGRATED:
 - [x] ./src/app/config/privacy-policy/privacy-policy.coffee
 - [x] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
 - [x] ./src/app/units/states/tasks/inbox/inbox.coffee
+- [x] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
 
 TODO:
 
@@ -179,7 +180,6 @@ TODO:
 - [ ] ./src/app/projects/states/index/index.coffee
 - [ ] ./src/app/projects/project-outcome-alignment/project-outcome-alignment.coffee
 - [ ] ./src/app/admin/modals/modals.coffee
-- [ ] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
 - [ ] ./src/app/admin/states/states.coffee
 - [ ] ./src/app/admin/states/units/units.coffee
 - [ ] ./src/app/admin/states/users/users.coffee
