@@ -64,7 +64,7 @@ MIGRATED:
 - [x] ./src/app/units/states/edit/directives/unit-tasks-editor/task-definition-editor/task-definition-editor.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-tasks-editor/task-definition-editor/task-definition-general/task-definition-general.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-tasks-editor/task-definition-editor/task-definition-upload/task-definition-upload.component.ts
-- [x] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.coffee
+- [x] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.component.ts
 - [x] ./src/app/units/states/analytics/unit-analytics-route.component.ts
 - [x] ./src/app/common/footer/footer.component.ts
 - [x] ./src/app/common/audio-recorder/audio/audio-comment-recorder/audio-comment-recorder.ts
