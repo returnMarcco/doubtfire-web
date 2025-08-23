@@ -16,7 +16,7 @@ Important: When completing a frontend migration, please update the below list re
 
 SUMMARY:
 
-`79 / 198` components migrated
+`80 / 198` components migrated
 `4` components no longer in the thoth-tech/9.x branch
 
 
@@ -59,6 +59,7 @@ MIGRATED:
 - [x] ./src/app/admin/tii-action-log/tii-action-log.component.ts
 - [x] ./src/app/admin/states/teaching-periods/teaching-period-list/teaching-period-list.component.ts
 - [x] ./src/app/admin/states/teaching-periods/teaching-period-unit-import/teaching-period-unit-import.dialog.ts
+- [x] ./src/app/admin/modals/create-unit-modal/create-new-unit-modal.component.ts
 - [x] ./src/app/eula/accept-eula/accept-eula.component.ts
 - [x] ./src/app/welcome/welcome.component.ts
 - [x] ./src/app/units/states/tasks/inbox/directives/staff-task-list/staff-task-list.component.ts
@@ -166,7 +167,6 @@ TODO:
 - [ ] ./src/app/projects/project-outcome-alignment/project-outcome-alignment.coffee
 - [ ] ./src/app/projects/states/tutorials/tutorials.coffee
 - [ ] ./src/app/admin/modals/modals.coffee
-- [ ] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
 - [ ] ./src/app/admin/states/states.coffee
 - [ ] ./src/app/admin/states/units/units.coffee
 - [ ] ./src/app/admin/states/users/users.coffee
