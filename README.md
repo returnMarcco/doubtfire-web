@@ -12,30 +12,12 @@ A modern, lightweight learning management system.
 
 ## Migration Progress
 
-Note: When raising an `upstream review` (to doubtfire-lms), move your component from the `TODO` section
-to the `AWAITING UPSTREAM REVIEW` section. Maintainers for the `doubtfire-lms` repo should then
-move the item to the `MIGRATED` section during the review process.
+Important: When completing a frontend migration, please update the below list regarding the component you have migrated.
 
 SUMMARY:
 
-79 / 198 components migrated
-12 components awaiting upstream review
-4 components no longer in the thoth-tech/9.x branch
-
-AWAITING UPSTREAM REVIEW:
-
-- [?] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-rater/task-ilo-alignment-rater.component.ts
-- [?] ./src/app/config/analytics/analytics.component.ts
-- [?] ./src/app/projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.component.ts
-- [?] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.component.ts
-- [?] ./src/app/common/filters/filters.component.ts
-- [?] ./src/app/common/content-editable/content-editable.component.ts
-- [?] ./src/app/projects/states/tutorials/tutorials.component.ts
-- [?] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.component.ts
-- [?] ./src/app/common/services/date-service.service.ts
-- [?] ./src/app/common/services/analytics-service.service.ts
-- [?] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.component.ts
-- [?] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
+`79 / 198` components migrated
+`4` components no longer in the thoth-tech/9.x branch
 
 
 NO LONGER IN THOTH-TECH/9.x
@@ -127,7 +109,6 @@ MIGRATED:
 - [x] ./src/app/config/privacy-policy/privacy-policy.coffee
 - [x] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
 - [x] ./src/app/units/states/tasks/inbox/inbox.coffee
-- [x] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
 
 TODO:
 
@@ -149,6 +130,7 @@ TODO:
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-editor/task-ilo-alignment-editor.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-viewer/task-ilo-alignment-viewer.coffee
+- [ ] ./src/app/tasks/task-ilo-alignment/task-ilo-alignment-rater/task-ilo-alignment-rater.coffee
 - [ ] ./src/app/tasks/modals/modals.coffee
 - [ ] ./src/app/config/config.coffee
 - [ ] ./src/app/config/runtime/runtime.coffee
@@ -157,6 +139,7 @@ TODO:
 - [ ] ./src/app/config/local-storage/local-storage.coffee
 - [ ] ./src/app/config/vendor-dependencies/vendor-dependencies.coffee
 - [ ] ./src/app/config/routing/routing.coffee
+- [ ] ./src/app/config/analytics/analytics.coffee
 - [ ] ./src/app/projects/projects.coffee
 - [ ] ./src/app/projects/progress-dashboard/project-progress-dashboard.coffee
 - [ ] ./src/app/projects/states/states.coffee
@@ -176,16 +159,21 @@ TODO:
 - [ ] ./src/app/projects/states/portfolio/directives/portfolio-learning-summary-report-step/portfolio-learning-summary-report-step.coffee
 - [ ] ./src/app/projects/states/portfolio/directives/portfolio-add-extra-files-step/portfolio-add-extra-files-step.coffee
 - [ ] ./src/app/projects/states/portfolio/directives/portfolio-tasks-step/portfolio-tasks-step.coffee
+- [ ] ./src/app/projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.coffee
+- [ ] ./src/app/projects/states/portfolio/directives/portfolio-welcome-step/portfolio-welcome-step.coffee
 - [ ] ./src/app/projects/states/portfolio/portfolio.coffee
 - [ ] ./src/app/projects/states/index/index.coffee
 - [ ] ./src/app/projects/project-outcome-alignment/project-outcome-alignment.coffee
+- [ ] ./src/app/projects/states/tutorials/tutorials.coffee
 - [ ] ./src/app/admin/modals/modals.coffee
+- [ ] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
 - [ ] ./src/app/admin/states/states.coffee
 - [ ] ./src/app/admin/states/units/units.coffee
 - [ ] ./src/app/admin/states/users/users.coffee
 - [ ] ./src/app/admin/admin.coffee
 - [ ] ./src/app/groups/group-selector/group-selector.coffee
 - [ ] ./src/app/groups/group-set-manager/group-set-manager.coffee
+- [ ] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
 - [ ] ./src/app/groups/group-member-list/group-member-list.coffee
 - [ ] ./src/app/groups/group-set-selector/group-set-selector.coffee
 - [ ] ./src/app/groups/groups.coffee
@@ -214,6 +202,8 @@ TODO:
 - [ ] ./src/app/units/states/rollover/rollover.coffee
 - [ ] ./src/app/units/states/index/index.coffee
 - [ ] ./src/app/units/states/students-list/students-list.coffee
+- [ ] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.coffee
+- [ ] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.coffee
 - [ ] ./src/app/common/alert-list/alert-list.coffee
 - [ ] ./src/app/common/modals/confirmation-modal/confirmation-modal.coffee
 - [ ] ./src/app/common/modals/comments-modal/comments-modal.coffee
@@ -223,6 +213,7 @@ TODO:
 - [ ] ./src/app/common/grade-icon/grade-icon.coffee
 - [ ] ./src/app/common/file-uploader/file-uploader.coffee
 - [ ] ./src/app/common/common.coffee
+- [ ] ./src/app/common/content-editable/content-editable.coffee
 - [ ] ./src/app/common/services/grade-service.coffee
 - [ ] ./src/app/common/services/alert-service.coffee
 - [ ] ./src/app/common/services/media-service.coffee
@@ -230,6 +221,8 @@ TODO:
 - [ ] ./src/app/common/services/outcome-service.coffee
 - [ ] ./src/app/common/services/listener-service.coffee
 - [ ] ./src/app/common/services/services.coffee
+- [ ] ./src/app/common/services/date-service.coffee
+- [ ] ./src/app/common/services/analytics-service.coffee
 - [ ] ./src/app/sessions/auth/http-auth-injector.coffee
 - [ ] ./src/app/sessions/sessions.coffee
 - [ ] ./src/app/errors/errors.coffee
@@ -237,6 +230,8 @@ TODO:
 - [ ] ./src/app/errors/states/unauthorised/unauthorised.coffee
 - [ ] ./src/app/errors/states/not-found/not-found.coffee
 - [ ] ./src/app/errors/states/timeout/timeout.coffee
+- [ ] ./src/app/common/filters/filters.coffee
+
 
 ## Table of Contents
 
