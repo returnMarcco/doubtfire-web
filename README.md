@@ -91,7 +91,7 @@ MIGRATED:
 - [x] ./src/app/common/services/alert.service.ts
 - [x] ./src/app/sessions/states/sign-in/sign-in.component.ts
 - [x] ./src/app/account/edit-profile/edit-profile.component.ts
-- [x] ./src/app/groups/group-set-selector/group-set-selector.coffee
+- [x] ./src/app/groups/group-set-selector/group-set-selector.component.ts
 - [x] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
 
 TODO:
