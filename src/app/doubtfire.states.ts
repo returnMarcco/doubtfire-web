@@ -13,6 +13,7 @@ import {UnitRootState} from './units/unit-root-state.component';
 import {ProjectRootState} from './projects/states/project-root-state.component';
 import { TaskViewerState } from './units/task-viewer/task-viewer-state.component';
 import {ScormPlayerComponent} from './common/scorm-player/scorm-player.component';
+import { UnitAnalyticsComponent } from './units/states/analytics/unit-analytics-route.component'; // Todo @SGE team: Replace with SGE component
 import { Ng2ViewDeclaration } from '@uirouter/angular';
 
 /*
@@ -411,6 +412,20 @@ const ScormPlayerReviewState: NgHybridStateDeclaration = {
   },
 };
 
+const StaffGrantExtensionState: NgHybridStateDeclaration = { // Todo @Jason: Navigating to this route makes the `TaskDropdown` disappear - fix
+  name: 'units/staff_grant_extension',
+  url: '/units/:unitId/staff_grant_extension',
+  views: {
+    main: {
+      component: UnitAnalyticsComponent, // Todo @SGE team: Replace with SGE component
+    },
+  },
+  data: {
+    pageTitle: 'Staff Grant Extension',
+    roleWhitelist: ['Tutor', 'Convenor', 'Admin'],
+  },
+};
+
 /**
  * Export the list of states we have created in angular
  */
@@ -433,4 +448,5 @@ export const doubtfireStates = [
   ScormPlayerNormalState,
   ScormPlayerReviewState,
   ScormPlayerStudentReviewState,
+  StaffGrantExtensionState,
 ];
