@@ -16,7 +16,7 @@ Important: When completing a frontend migration, please update the below list re
 
 SUMMARY:
 
-`80 / 198` components migrated
+`84 / 198` components migrated
 `4` components no longer in the thoth-tech/9.x branch
 
 
@@ -109,6 +109,9 @@ MIGRATED:
 - [x] ./src/app/visualisations/progress-burndown-chart/progressburndownchart.component.ts
 - [x] ./src/app/config/privacy-policy/privacy-policy.coffee
 - [x] ./src/app/units/states/tasks/viewer/directives/task-sheet-view/task-sheet-view.coffee
+- [x] ./src/app/units/states/tasks/viewer/directives/task-details-view/task-details-view.coffee
+- [x] ./src/app/units/states/tasks/viewer/directives/unit-task-list/unit-task-list.coffee
+- [x] ./src/app/projects/states/dashboard/directives/student-task-list/student-task-list.coffee
 - [x] ./src/app/units/states/tasks/inbox/inbox.coffee
 
 TODO:
@@ -149,7 +152,6 @@ TODO:
 - [ ] ./src/app/projects/states/feedback/feedback.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/directives.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/progress-dashboard/progress-dashboard.coffee
-- [ ] ./src/app/projects/states/dashboard/directives/student-task-list/student-task-list.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/directives.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/task-outcomes-card/task-outcomes-card.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/task-dashboard.coffee
@@ -183,8 +185,6 @@ TODO:
 - [ ] ./src/app/units/states/states.coffee
 - [ ] ./src/app/units/states/tasks/tasks.coffee
 - [ ] ./src/app/units/states/tasks/viewer/directives/directives.coffee
-- [ ] ./src/app/units/states/tasks/viewer/directives/task-details-view/task-details-view.coffee
-- [ ] ./src/app/units/states/tasks/viewer/directives/unit-task-list/unit-task-list.coffee
 - [ ] ./src/app/units/states/tasks/viewer/viewer.coffee
 - [ ] ./src/app/units/states/tasks/definition/definition.coffee
 - [ ] ./src/app/units/states/portfolios/portfolios.coffee
