@@ -16,16 +16,31 @@ Important: When completing a frontend migration, please update the below list re
 
 SUMMARY:
 
-`84 / 198` components migrated
-`4` components no longer in the thoth-tech/9.x branch
+`90 / 171` components migrated
+`19` components no longer in the thoth-tech/9.x branch
 
 
-NO LONGER IN THOTH-TECH/9.x
+NO LONGER IN thoth-tech/9.x
 
 - [x] ./src/app/projects/states/all/directives/all-projects-list/all-projects-list.coffee
 - [x] ./src/app/projects/states/all/all.coffee
 - [x] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
 - [x] ./src/app/tasks/task-definition-selector/task-definition-selector.coffee
+- [x] ./src/app/tasks/task-status-selector/task-status-selector.coffee
+- [x] ./src/app/config/debug/debug.coffee
+- [x] ./src/app/projects/states/all/directives/directives.coffee
+- [x] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/directives.coffee
+- [x] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/task-outcomes-card/task-outcomes-card.coffee
+- [x] ./src/app/admin/states/states.coffee
+- [x] ./src/app/admin/admin.coffee
+- [x] ./src/app/units/states/tasks/viewer/directives/directives.coffee
+- [x] ./src/app/units/states/tasks/viewer/viewer.coffee
+- [x] ./src/app/units/states/all/directives/all-units-list/all-units-list.coffee
+- [x] ./src/app/units/states/all/directives/directives.coffee
+- [x] ./src/app/units/states/all/all.coffee
+- [x] ./src/app/common/alert-list/alert-list.coffee
+- [x] ./src/app/common/modals/progress-modal/progress-modal.coffee
+- [x] ./src/app/errors/states/not-found/not-found.coffee
 
 
 MIGRATED:
@@ -113,6 +128,12 @@ MIGRATED:
 - [x] ./src/app/units/states/tasks/viewer/directives/unit-task-list/unit-task-list.coffee
 - [x] ./src/app/projects/states/dashboard/directives/student-task-list/student-task-list.coffee
 - [x] ./src/app/units/states/tasks/inbox/inbox.coffee
+- [x] ./src/app/admin/states/units/units.component.ts
+- [x] ./src/app/admin/states/users/users.component.ts
+- [x] ./src/app/common/grade-icon/grade-icon.component.ts
+- [x] ./src/app/common/services/grade.service.ts
+- [x] ./src/app/common/services/alert.service.ts
+- [x] ./src/app/errors/states/unauthorised/unauthorised.component.ts
 
 TODO:
 
@@ -126,7 +147,6 @@ TODO:
 - [ ] ./src/app/visualisations/achievement-box-plot.coffee
 - [ ] ./src/app/visualisations/task-completion-box-plot.coffee
 - [ ] ./src/app/visualisations/visualisations.coffee
-- [ ] ./src/app/tasks/task-status-selector/task-status-selector.coffee
 - [ ] ./src/app/tasks/tasks.coffee
 - [ ] ./src/app/tasks/modals/upload-submission-modal/upload-submission-modal.coffee
 - [ ] ./src/app/tasks/task-ilo-alignment/modals/task-ilo-alignment-modal/task-ilo-alignment-modal.coffee
@@ -139,21 +159,17 @@ TODO:
 - [ ] ./src/app/config/config.coffee
 - [ ] ./src/app/config/runtime/runtime.coffee
 - [ ] ./src/app/config/root-controller/root-controller.coffee
-- [ ] ./src/app/config/debug/debug.coffee
 - [ ] ./src/app/config/local-storage/local-storage.coffee
 - [ ] ./src/app/config/vendor-dependencies/vendor-dependencies.coffee
 - [ ] ./src/app/config/routing/routing.coffee
 - [ ] ./src/app/config/analytics/analytics.coffee
 - [ ] ./src/app/projects/projects.coffee
-- [ ] ./src/app/projects/progress-dashboard/project-progress-dashboard.coffee
+- [ ] ./src/app/projects/project-progress-dashboard/project-progress-dashboard.coffee
 - [ ] ./src/app/projects/states/states.coffee
-- [ ] ./src/app/projects/states/all/directives/directives.coffee
 - [ ] ./src/app/projects/states/groups/groups.coffee
 - [ ] ./src/app/projects/states/feedback/feedback.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/directives.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/progress-dashboard/progress-dashboard.coffee
-- [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/directives.coffee
-- [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/directives/task-outcomes-card/task-outcomes-card.coffee
 - [ ] ./src/app/projects/states/dashboard/directives/task-dashboard/task-dashboard.coffee
 - [ ] ./src/app/projects/states/dashboard/dashboard.coffee
 - [ ] ./src/app/projects/states/outcomes/outcomes.coffee
@@ -169,10 +185,6 @@ TODO:
 - [ ] ./src/app/projects/project-outcome-alignment/project-outcome-alignment.coffee
 - [ ] ./src/app/projects/states/tutorials/tutorials.coffee
 - [ ] ./src/app/admin/modals/modals.coffee
-- [ ] ./src/app/admin/states/states.coffee
-- [ ] ./src/app/admin/states/units/units.coffee
-- [ ] ./src/app/admin/states/users/users.coffee
-- [ ] ./src/app/admin/admin.coffee
 - [ ] ./src/app/groups/group-selector/group-selector.coffee
 - [ ] ./src/app/groups/group-set-manager/group-set-manager.coffee
 - [ ] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
@@ -184,14 +196,9 @@ TODO:
 - [ ] ./src/app/units/units.coffee
 - [ ] ./src/app/units/states/states.coffee
 - [ ] ./src/app/units/states/tasks/tasks.coffee
-- [ ] ./src/app/units/states/tasks/viewer/directives/directives.coffee
-- [ ] ./src/app/units/states/tasks/viewer/viewer.coffee
 - [ ] ./src/app/units/states/tasks/definition/definition.coffee
 - [ ] ./src/app/units/states/portfolios/portfolios.coffee
-- [ ] ./src/app/units/states/all/directives/all-units-list/all-units-list.coffee
-- [ ] ./src/app/units/states/all/directives/directives.coffee
 - [ ] ./src/app/units/states/analytics/analytics.coffee
-- [ ] ./src/app/units/states/all/all.coffee
 - [ ] ./src/app/units/states/groups/groups.coffee
 - [ ] ./src/app/units/states/edit/directives/directives.coffee
 - [ ] ./src/app/units/states/edit/directives/unit-group-set-editor/unit-group-set-editor.coffee
@@ -204,18 +211,13 @@ TODO:
 - [ ] ./src/app/units/states/students-list/students-list.coffee
 - [ ] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.coffee
 - [ ] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.coffee
-- [ ] ./src/app/common/alert-list/alert-list.coffee
 - [ ] ./src/app/common/modals/confirmation-modal/confirmation-modal.coffee
 - [ ] ./src/app/common/modals/comments-modal/comments-modal.coffee
 - [ ] ./src/app/common/modals/modals.coffee
 - [ ] ./src/app/common/modals/csv-result-modal/csv-result-modal.coffee
-- [ ] ./src/app/common/modals/progress-modal/progress-modal.coffee
-- [ ] ./src/app/common/grade-icon/grade-icon.coffee
 - [ ] ./src/app/common/file-uploader/file-uploader.coffee
 - [ ] ./src/app/common/common.coffee
 - [ ] ./src/app/common/content-editable/content-editable.coffee
-- [ ] ./src/app/common/services/grade-service.coffee
-- [ ] ./src/app/common/services/alert-service.coffee
 - [ ] ./src/app/common/services/media-service.coffee
 - [ ] ./src/app/common/services/recorder-service.coffee
 - [ ] ./src/app/common/services/outcome-service.coffee
@@ -227,10 +229,11 @@ TODO:
 - [ ] ./src/app/sessions/sessions.coffee
 - [ ] ./src/app/errors/errors.coffee
 - [ ] ./src/app/errors/states/states.coffee
-- [ ] ./src/app/errors/states/unauthorised/unauthorised.coffee
-- [ ] ./src/app/errors/states/not-found/not-found.coffee
 - [ ] ./src/app/errors/states/timeout/timeout.coffee
 - [ ] ./src/app/common/filters/filters.coffee
+- [ ] ./src/app/errors/errors.coffee
+- [ ] ./src/app/errors/states/states.coffee
+- [ ] ./src/app/errors/states/timeout/timeout.coffee
 
 
 ## Table of Contents
