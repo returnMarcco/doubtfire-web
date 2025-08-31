@@ -16,7 +16,7 @@ Important: When completing a frontend migration, please update the below list re
 
 SUMMARY:
 
-`90 / 171` components migrated
+`89 / 183` components migrated
 `19` components no longer in the thoth-tech/9.x branch
 
 
@@ -231,9 +231,6 @@ TODO:
 - [ ] ./src/app/errors/states/states.coffee
 - [ ] ./src/app/errors/states/timeout/timeout.coffee
 - [ ] ./src/app/common/filters/filters.coffee
-- [ ] ./src/app/errors/errors.coffee
-- [ ] ./src/app/errors/states/states.coffee
-- [ ] ./src/app/errors/states/timeout/timeout.coffee
 
 
 ## Table of Contents
