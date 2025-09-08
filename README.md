@@ -16,8 +16,8 @@ Important: When completing a frontend migration, please update the below list re
 
 SUMMARY:
 
-`89 / 183` components migrated
-`19` components no longer in the thoth-tech/9.x branch
+- `89 / 183` components migrated
+- `19` components no longer in the thoth-tech/9.x branch
 
 
 NO LONGER IN thoth-tech/9.x
