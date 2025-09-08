@@ -6,7 +6,7 @@
       *ngIf="showGroupSetSelector"
       [unit]="unit"
       [(selected-group-set)]="selectedGroupSet"
-      (on-change)="selectGroupSet($event)"
+      (selected-group-set-change)="selectGroupSet($event)"
     >
     </group-set-selector>
   </h4>

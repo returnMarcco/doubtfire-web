@@ -18,7 +18,9 @@ export class GroupSetSelectorComponent implements OnInit {
   }
 
   /**
-   * Selects a `GroupSet` model from the `group-set-selector` dropdown.
+   * Emits the selected group set and updates the parent component.
+   *
+   * Also updates the local state.
    *
    * @param {GroupSet} groupSet
    */
