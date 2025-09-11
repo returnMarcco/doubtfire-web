@@ -93,6 +93,7 @@ MIGRATED:
 - [x] ./src/app/account/edit-profile/edit-profile.component.ts
 - [x] ./src/app/groups/group-set-selector/group-set-selector.component.ts
 - [x] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
+- [x] ./src/app/common/services/date.service.ts
 
 TODO:
 
@@ -209,7 +210,6 @@ TODO:
 - [ ] ./src/app/common/file-uploader/file-uploader.coffee
 - [ ] ./src/app/common/common.coffee
 - [ ] ./src/app/common/services/grade-service.coffee
-- [ ] ./src/app/common/services/date-service.coffee
 - [ ] ./src/app/common/services/alert-service.coffee
 - [ ] ./src/app/common/services/media-service.coffee
 - [ ] ./src/app/common/services/recorder-service.coffee
