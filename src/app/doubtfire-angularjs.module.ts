@@ -96,7 +96,6 @@ import 'build/src/app/units/states/groups/groups.js';
 import 'build/src/app/units/states/states.js';
 import 'build/src/app/units/states/edit/directives/unit-group-set-editor/unit-group-set-editor.js';
 import 'build/src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.js';
-import 'build/src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.js';
 import 'build/src/app/units/states/edit/directives/unit-ilo-editor/unit-ilo-editor.js';
 import 'build/src/app/units/states/edit/directives/directives.js';
 import 'build/src/app/units/states/edit/edit.js';
@@ -219,8 +218,9 @@ import {AlertService} from './common/services/alert.service';
 
 import {GradeService} from './common/services/grade.service';
 import {TaskScormCardComponent} from './projects/states/dashboard/directives/task-dashboard/directives/task-scorm-card/task-scorm-card.component';
-import {UnitStudentEnrolmentModalService} from './units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.service';
-import {PrivacyPolicy} from './config/privacy-policy/privacy-policy';
+import { UnitStudentEnrolmentModalService } from './units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.service';
+import { PrivacyPolicy } from './config/privacy-policy/privacy-policy';
+import { UnitStaffEditorComponent } from './units/states/edit/directives/unit-staff-editor/unit-staff-editor.component';
 import {GroupSetSelectorComponent} from './groups/group-set-selector/group-set-selector.component';
 
 export const DoubtfireAngularJSModule = angular.module('doubtfire', [
@@ -480,6 +480,7 @@ DoubtfireAngularJSModule.directive(
 );
 DoubtfireAngularJSModule.directive('newFUnits', downgradeComponent({component: FUnitsComponent}));
 
+DoubtfireAngularJSModule.directive('unitStaffEditor', downgradeComponent({ component: UnitStaffEditorComponent }));
 DoubtfireAngularJSModule.directive(
   'unauthorised',
   downgradeComponent({component: UnauthorisedComponent}),
