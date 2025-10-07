@@ -76,7 +76,6 @@ import 'build/src/app/projects/states/portfolio/directives/portfolio-tasks-step/
 import 'build/src/app/projects/states/portfolio/directives/directives.js';
 import 'build/src/app/projects/states/portfolio/portfolio.js';
 import 'build/src/app/projects/states/index/index.js';
-import 'build/src/app/projects/states/tutorials/tutorials.js';
 import 'build/src/app/projects/project-outcome-alignment/project-outcome-alignment.js';
 import 'build/src/app/admin/modals/modals.js';
 import 'build/src/app/groups/group-selector/group-selector.js';
@@ -210,20 +209,20 @@ import {FTaskDetailsViewComponent} from './units/task-viewer/directives/task-det
 import {FTaskSheetViewComponent} from './units/task-viewer/directives/task-sheet-view/task-sheet-view.component';
 import {ProgressBurndownChartComponent} from './visualisations/progress-burndown-chart/progressburndownchart.component';
 import {TaskVisualisationComponent} from './visualisations/task-visualisation/taskvisualisation.component';
+import {TutorialsComponent} from './projects/states/tutorials/tutorials.component';
 import {ProgressDashboardComponent} from './projects/states/dashboard/directives/progress-dashboard/progress-dashboard.component';
 import {FUnitsComponent} from './admin/states/units/units.component';
 import {AlertService} from './common/services/alert.service';
 import {GradeService} from './common/services/grade.service';
 import {TaskScormCardComponent} from './projects/states/dashboard/directives/task-dashboard/directives/task-scorm-card/task-scorm-card.component';
+import {UnitStudentEnrolmentModalService} from './units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.service';
+import {PrivacyPolicy} from './config/privacy-policy/privacy-policy';
 
 // import { UnitStudentEnrolmentModalService } from './units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.service';
 // import { PrivacyPolicy } from './config/privacy-policy/privacy-policy';
 import {UnitStaffEditorComponent} from './units/states/edit/directives/unit-staff-editor/unit-staff-editor.component';
 import {GroupSetSelectorComponent} from './groups/group-set-selector/group-set-selector.component';
 import {PortfolioGradeSelectStepComponent} from './projects/states/portfolio/directives/portfolio-grade-select-step/portfolio-grade-select-step.component';
-
-import {UnitStudentEnrolmentModalService} from './units/modals/unit-student-enrolment-modal/unit-student-enrolment-modal.service';
-import {PrivacyPolicy} from './config/privacy-policy/privacy-policy';
 
 export const DoubtfireAngularJSModule = angular.module('doubtfire', [
   'doubtfire.config',
@@ -486,6 +485,10 @@ DoubtfireAngularJSModule.directive(
 );
 DoubtfireAngularJSModule.directive('newFUnits', downgradeComponent({component: FUnitsComponent}));
 
+DoubtfireAngularJSModule.directive(
+  'fTutorials',
+  downgradeComponent({component: TutorialsComponent}),
+);
 DoubtfireAngularJSModule.directive(
   'unitStaffEditor',
   downgradeComponent({component: UnitStaffEditorComponent}),
