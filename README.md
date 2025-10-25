@@ -42,7 +42,6 @@ NO LONGER IN thoth-tech/9.x
 - [x] ./src/app/common/modals/progress-modal/progress-modal.coffee
 - [x] ./src/app/errors/states/not-found/not-found.coffee
 
-
 MIGRATED:
 
 - [x] ./src/app/home/splash-screen/splash-screen.component.ts
@@ -92,6 +91,7 @@ MIGRATED:
 - [x] ./src/app/units/states/edit/directives/unit-tasks-editor/task-definition-editor/task-definition-editor.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-tasks-editor/task-definition-editor/task-definition-general/task-definition-general.component.ts
 - [x] ./src/app/units/states/edit/directives/unit-tasks-editor/task-definition-editor/task-definition-upload/task-definition-upload.component.ts
+- [x] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.component.ts
 - [x] ./src/app/units/states/analytics/unit-analytics-route.component.ts
 - [x] ./src/app/common/footer/footer.component.ts
 - [x] ./src/app/common/audio-recorder/audio/audio-comment-recorder/audio-comment-recorder.ts
@@ -134,6 +134,15 @@ MIGRATED:
 - [x] ./src/app/common/services/grade.service.ts
 - [x] ./src/app/common/services/alert.service.ts
 - [x] ./src/app/errors/states/unauthorised/unauthorised.component.ts
+- [x] ./src/app/groups/group-set-selector/group-set-selector.component.ts
+- [x] ./src/app/admin/modals/create-unit-modal/create-unit-modal.coffee
+- [x] ./src/app/common/services/date.service.ts
+- [x] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.coffee (IN 10.0.x)
+- [x] ./src/app/groups/group-member-list/group-member-list.coffee
+- [x] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.coffee
+- [x] ./src/app/common/modals/confirmation-modal/confirmation-modal.coffee
+- [x] ./src/app/common/modals/comments-modal/comments-modal.coffee (IN 10.0.x)
+
 
 TODO:
 
@@ -188,9 +197,11 @@ TODO:
 - [ ] ./src/app/groups/group-selector/group-selector.coffee
 - [ ] ./src/app/groups/group-set-manager/group-set-manager.coffee
 - [ ] ./src/app/groups/group-member-contribution-assigner/group-member-contribution-assigner.coffee
-- [ ] ./src/app/groups/group-member-list/group-member-list.coffee
 - [ ] ./src/app/groups/group-set-selector/group-set-selector.coffee
+- [ ] ./src/app/groups/tutor-group-manager/tutor-group-manager.coffee
 - [ ] ./src/app/groups/groups.coffee
+- [ ] ./src/app/units/states/groups/groups.coffee
+- [ ] ./src/app/units/states/edit/directives/unit-group-set-editor/unit-group-set-editor.coffee
 - [ ] ./src/app/units/modals/modals.coffee
 - [ ] ./src/app/units/modals/unit-ilo-edit-modal/unit-ilo-edit-modal.coffee
 - [ ] ./src/app/units/units.coffee
@@ -199,9 +210,7 @@ TODO:
 - [ ] ./src/app/units/states/tasks/definition/definition.coffee
 - [ ] ./src/app/units/states/portfolios/portfolios.coffee
 - [ ] ./src/app/units/states/analytics/analytics.coffee
-- [ ] ./src/app/units/states/groups/groups.coffee
 - [ ] ./src/app/units/states/edit/directives/directives.coffee
-- [ ] ./src/app/units/states/edit/directives/unit-group-set-editor/unit-group-set-editor.coffee
 - [ ] ./src/app/units/states/edit/directives/unit-ilo-editor/unit-ilo-editor.coffee
 - [ ] ./src/app/units/states/edit/edit.coffee
 - [ ] ./src/app/units/states/rollover/directives/directives.coffee
@@ -209,10 +218,6 @@ TODO:
 - [ ] ./src/app/units/states/rollover/rollover.coffee
 - [ ] ./src/app/units/states/index/index.coffee
 - [ ] ./src/app/units/states/students-list/students-list.coffee
-- [ ] ./src/app/units/states/edit/directives/unit-details-editor/unit-details-editor.coffee
-- [ ] ./src/app/units/states/edit/directives/unit-staff-editor/unit-staff-editor.coffee
-- [ ] ./src/app/common/modals/confirmation-modal/confirmation-modal.coffee
-- [ ] ./src/app/common/modals/comments-modal/comments-modal.coffee
 - [ ] ./src/app/common/modals/modals.coffee
 - [ ] ./src/app/common/modals/csv-result-modal/csv-result-modal.coffee
 - [ ] ./src/app/common/file-uploader/file-uploader.coffee
