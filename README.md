@@ -17,10 +17,10 @@ Important: When completing a frontend migration, please update the below list re
 SUMMARY:
 
 - `89 / 183` components migrated
-- `19` components no longer in the thoth-tech/9.x branch
+- `19` components no longer in the doubtfire-lms/9.x branch
 
 
-NO LONGER IN thoth-tech/9.x
+NO LONGER IN doubtfire-lms/9.x
 
 - [x] ./src/app/projects/states/all/directives/all-projects-list/all-projects-list.coffee
 - [x] ./src/app/projects/states/all/all.coffee
